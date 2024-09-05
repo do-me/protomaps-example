@@ -1,5 +1,5 @@
-# protomaps-example
-Simple Leaflet example for Protomaps with custom bbox
+# Protomaps Example
+Simple Leaflet example for Protomaps with custom bbox.
 
 ## Tutorial
 
