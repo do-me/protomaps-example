@@ -18,7 +18,7 @@
         <script>
             const map = L.map('map')
             map.setView(new L.LatLng(48.162650,11.619759),13)
-            var layer = protomapsL.leafletLayer({url:'/munich.pmtiles',theme:'light'})
+            var layer = protomapsL.leafletLayer({url:'./munich.pmtiles',theme:'light'})
             layer.addTo(map)
 
             map.on("click", (ev) => {
