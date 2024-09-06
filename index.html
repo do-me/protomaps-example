@@ -2,8 +2,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
-        <script src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script src="https://unpkg.com/protomaps-leaflet@4.0.0/dist/protomaps-leaflet.js"></script>
 
         <style>
@@ -20,13 +20,6 @@
             map.setView(new L.LatLng(48.137218,11.575210),15)
             var layer = protomapsL.leafletLayer({url:'./munich.pmtiles',theme:'light'})
             layer.addTo(map)
-
-            map.on("click", (ev) => {
-                const wrapped = map.wrapLatLng(ev.latlng);
-                // note: this method supports only basic use,
-                // see comments in source code
-                console.log(layer.queryTileFeaturesDebug(wrapped.lng, wrapped.lat));
-            })
         </script>
     </body>
 </html>
